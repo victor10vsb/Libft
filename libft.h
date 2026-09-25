@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:52:05 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/25 19:39:20 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/09/25 19:49:06 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+
 
 #endif
