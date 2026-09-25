@@ -6,11 +6,11 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:22:44 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/24 17:25:53 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/09/25 20:06:34 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
