@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:52:05 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/26 16:16:49 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/09/26 16:19:18 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmmemb, size_t size);
 char	*ft_strdup(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
