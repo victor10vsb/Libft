@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 17:34:29 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/26 17:57:29 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/09/27 19:21:38 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
-	
+
 	i = 0;
 	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
@@ -24,5 +24,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (j > i && ft_strchr(set, s1[j - 1]))
 		j--;
 	return (ft_substr(s1, i, (j - i)));
-	
 }
