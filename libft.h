@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 17:52:05 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/28 20:14:42 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/09/28 21:06:43 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *c, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 #endif
