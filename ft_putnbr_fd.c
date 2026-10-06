@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 21:09:53 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/30 14:57:08 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:20:56 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,15 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
-	size_t	i;
+	long	num;
 
-	str = ft_itoa(n);
-	if (!str)
-		return ;
-	i = 0;
-	while (str[i])
+	num = n;
+	if (num < 0)
 	{
-		write(fd, &str[i], 1);
-		i++;
+		ft_putchar_fd('-', fd);
+		num = -num;
 	}
-	free(str);
+	if (num > 10)
+		ft_putnbr_fd(num / 10, fd);
+	ft_putchar_fd(num % 10 + '0', fd);
 }

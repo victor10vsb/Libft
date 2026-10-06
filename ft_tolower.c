@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 19:15:46 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/25 19:20:16 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:04:43 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	return (c);
 }

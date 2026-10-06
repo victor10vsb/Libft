@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 14:40:32 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/10/05 14:52:56 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:04:04 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*next;
-
 	if (!lst || !f)
 		return ;
 	while (lst)

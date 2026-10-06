@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 19:26:20 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/28 15:15:57 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:14:45 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,25 @@ char	*ft_itoa(int n)
 {
 	size_t	len;
 	char	*str;
-	size_t	i;
 	long	num;
 
 	num = n;
-	len = ft_num_len(n);
+	len = ft_num_len(num);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	i = len;
-	str[i] = 0;
+	str[len] = 0;
+	if (num == 0)
+		str[0] = '0';
 	if (num < 0)
 	{
 		num *= -1;
 		str[0] = '-';
 	}
-	while (i > 0 && num > 0)
+	while (num > 0)
 	{
-		i--;
-		str[i] = num % 10 + '0';
+		len--;
+		str[len] = num % 10 + '0';
 		num /= 10;
 	}
 	return (str);

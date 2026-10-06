@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 13:50:25 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/26 14:19:56 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:27:52 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ static int	ft_isspace(char c)
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	sign = 1;
@@ -43,5 +43,5 @@ int	ft_atoi(const char *nptr)
 			result *= 10;
 		i++;
 	}
-	return (result * sign);
+	return ((int)result * sign);
 }

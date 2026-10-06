@@ -6,7 +6,7 @@
 /*   By: vicsanch <vicsanch@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 17:19:10 by vicsanch          #+#    #+#             */
-/*   Updated: 2026/09/27 19:18:44 by vicsanch         ###   ########.fr       */
+/*   Updated: 2026/10/06 12:25:00 by vicsanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static size_t	ft_count_words(char const *s, char c)
 	return (words);
 }
 
-char	**ft_free_split(char **split, size_t words)
+static char	**ft_free_split(char **split, size_t words)
 {
 	while (words > 0)
 	{
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 	size_t	words;
 
 	words = ft_count_words(s, c);
-	split = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	split = malloc(sizeof(char *) * (words + 1));
 	if (!split)
 		return (NULL);
 	i = 0;
