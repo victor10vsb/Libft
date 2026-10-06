@@ -15,10 +15,10 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) libft.h
 		ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+%.o: %.c libft.h
 		$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
